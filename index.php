@@ -1,3 +1,11 @@
 <?php
 
-echo('Hello world');
+$app = new Application();
+
+$app->router->get('/', function(){
+    return 'Hello World !';
+});
+
+$app->userRouter($router);
+
+$app->run();
