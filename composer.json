@@ -1,0 +1,17 @@
+{
+    "name": "crusadertech/mvc-php",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Crusadertech\\MvcPhp\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Patrick Laubscher",
+            "email": "patricklaubscher@hotmail.com"
+        }
+    ],
+    "require": {}
+}
