@@ -9,5 +9,9 @@ $app->router->get('/', function(){
     return 'Hello World !';
 });
 
+$app->router->get('/contact', function(){
+    return 'Hello World !';
+});
+
 
 $app->run();
