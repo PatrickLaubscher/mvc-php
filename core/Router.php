@@ -14,13 +14,20 @@ class Router
 
     public function get($path, $callback) 
     {
-        $this->routes[$path] = $callback;
+        $this->routes['get'][$path] = $callback;
     }
 
     public function resolve()
     {
-        $this->request->getPath();
-        
+        $path = $this->request->getPath();
+        $method = $this->request->getMethod();
+        $callback = $this->routes[$method][$path] ?? false ;
+        if ($callback === false) {
+            echo "Not found";
+            exit;
+        }
+        echo call_user_func($callback);
+
     }
 
 }
