@@ -5,10 +5,9 @@
         <div class="col">
             <div class="form-group mb-1">
                 <label>First name</label>
-                <input type="text" name="fistname" class="form-control">
+                <input type="text" name="firstname" class="form-control">
             </div>
         </div>
-
         <div class="col">
             <div class="form-group mb-1">
                 <label>Last name</label>

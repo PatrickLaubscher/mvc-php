@@ -1,6 +1,5 @@
 <?php
 
-
 namespace app\controllers;
 
 use app\core\Request;
@@ -12,7 +11,7 @@ class SiteController extends Controller {
     public function home() {
 
         $params = [
-            'name' => "TheCodeholic"
+            'name' => "CrusaderTech"
         ];
 
         return $this->render('home', $params);
