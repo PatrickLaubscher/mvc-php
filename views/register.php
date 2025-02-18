@@ -5,7 +5,10 @@
         <div class="col">
             <div class="form-group mb-1">
                 <label>First name</label>
-                <input type="text" name="firstname" class="form-control">
+                <input type="text" name="firstname" value="<?php echo $model->firstname; ?>" class="form-control<?php echo $model->hasError('firstname') ? ' is-invalid' : '' ?>">
+                <div class="invalid-feedback">
+                  <?php echo $model->getFirstError('firstname'); ?>
+                </div>
             </div>
         </div>
         <div class="col">
