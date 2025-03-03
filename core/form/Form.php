@@ -4,16 +4,18 @@ namespace app\core\form;
 
 use app\core\Model;
 
-class Form {
 
+
+class Form {
 
     public static function begin($action, $method) {
         
-        return sprintf('<form action="%s" method="%s">', );
+        echo sprintf('<form action="%s" method="%s">', $action, $method);
+        return new Form();
 
     }
 
-    public static function end() {
+    public static function end() { 
 
         return '</form>';
 
